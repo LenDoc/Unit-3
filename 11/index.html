@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+     <style>
+body{
+    background-color: rgba(164, 165, 219, 0.418);
+    font-style: oblique;
+    font-family: Arial;
+
+}
+article p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+    color:blueviolet;
+}   
+article p::first-line {
+    color:rgb(67, 104, 25);
+}   
+article p:last-child{
+    font-size: 100%;
+    font-weight: lighter;
+    color:rgb(255, 23, 151);
+}
+a {
+  margin: 40px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: serif;
+  background-color: rgb(255, 225, 125);
+  border: 2px solid rgb(184, 120, 37);
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(10, 9, 58);
+}
+a:hover { 
+    text-decoration: underline; 
+    background-color: rgb(228, 144, 119);  
+   } 
+a:visited {
+	color: rgb(49, 21, 21);
+}
+blockquote::before {
+	content: "«";
+}
+
+blockquote::after {
+	content: "»";
+}
+
+blockquote::selection {
+	color: #C8F7C5;
+	background-color: #1E824C;
+}
+blockquote{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+blockquote {
+    width: 60%;
+margin: 0;
+background: #FDFBFB;
+color: #5F5F5F;
+padding: 30px 30px 30px 80px;
+position: relative;
+font-family: 'Lato', sans-serif;
+}blockquote :before {
+content: "\201C";
+font-family: serif;
+position: absolute;
+font-size: 60px;
+left: -50px;
+top: 10px;
+line-height: 0;
+}
+blockquote :after {
+content: "\201D";
+font-family: serif;
+position: absolute;
+font-size: 60px;
+right: -50px;
+bottom: -10px;
+line-height: 0;
+}
+blockquote p {
+font-size: 24px;
+letter-spacing: .05em;
+line-height: 1.4;
+margin: 0 0 16px;
+position: relative;
+z-index: 3;
+}
+blockquote cite {
+font-style: normal;
+font-weight: 300;
+}
+    </style>
+</head>
+<body>
+   <center>
+    <article style="width: 50%;">
+        <p>
+            Спроба побити цей рекорд була зроблена в Південній Африці. По залізничній трасі був 
+            відправлений в дорогу склад з 660 вагонів, довжиною 7,3 кілометра. Однак полотно не
+             витримало такого навантаження, і експеримент зазнав фіаско.</p>
+    
+        <p>Сучасні локомотиви не дуже давно змінили парову тягу на електричну. Однак перші 
+            спроби створення електровоза були зроблені ще в кінці 19 століття, коли мережі
+             залізниць у світі активно розвивалися, а парові машини шукали досконалості.</p>
+        <p>
+            Залізничний транспорт вважається найбезпечнішим транспортом з усіх видів. 
+            Ймовірність потрапити в аварію на поїзді нижче ймовірності автокатастрофи в 45 разів.
+        </p>
+    
+    </article>
+    <blockquote> 
+        Поставте якусь найостаннішу нікчемність у продажу якихось поганих квитків на залізницю,
+         і ця нікчемність негайно ж вважатиме себе в праві дивитися на вас Юпітером, коли ви підете взяти квиток.
+         <br/>
+    <cite>  Федір Достоєвський </cite>
+
+</blockquote>
+    <br/>
+    <a class="link" href="author.html">Про автора </a>
+ </center>
+</body>
+</html>
